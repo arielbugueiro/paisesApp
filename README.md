@@ -1,7 +1,12 @@
 # PaisesApp
 
-Esta es una SPA (single Page Application) realizada con Angular. Permite mostrar diversa información del país que deseamos, tenemos 3 inputs para buscar de la manera que mas preferimos (por país, región, o capital), utiliza un autocomplete para simplificar la búsqueda y que vayan aparaciendo las distintas sugerencias a medida que vamos escribiendo el país/ciudad deseada. Esta aplicación consume la Api -> restcountries
+Esta es una SPA (single Page Application) realizada con Angular. Permite mostrar diversa información del país que deseamos, tenemos 3 inputs para buscar de la manera que mas preferimos (por país, región, o capital), utiliza un autocomplete para simplificar la búsqueda y que vayan aparaciendo las distintas sugerencias a medida que vamos escribiendo el país/ciudad deseada. <br>
+Esta aplicación consume la Api -> restcountries
 
+<br>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/70410313/141801166-d7f3ea1b-ceda-4f3b-99f6-d509318331c3.PNG">
+</p>
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
