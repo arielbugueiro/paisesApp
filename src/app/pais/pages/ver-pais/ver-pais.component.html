@@ -1,0 +1,60 @@
+<div *ngIf="!paises; else divPais" 
+      class="alert alert-info">
+    Espere por favor...
+</div>
+
+
+<ng-template #divPais>
+    <div class="row">
+        <div class="col-12">
+            <tr *ngFor= "let pais of paises;">
+                <h1>Pais: <small> {{ pais.name.common }} </small></h1> 
+            </tr>
+        </div>
+    </div>
+
+ <div class="row">
+       
+        <div class="col-4">
+        <tr *ngFor= "let pais of paises;">
+            <h3>Bandera</h3>
+            <img class="img-thumbnail"  [src]="pais.flags.png" alt="">
+        </div>
+
+        <div class="col">
+            <tr *ngFor= "let pais of paises;">
+            <h3>Infomación</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Población</strong> {{pais.population | number}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Código Numérico</strong> {{pais.ccn3}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Código alpha3</strong> {{pais.cca3}}
+                </li>
+            </ul>
+        </div>
+
+  </div>
+
+  
+  <div class="row">
+      <div class="col mt-3">
+          <h3>Traducciones</h3>
+         <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.ara.common }}</span>
+         <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.ara.common }}</span>
+        <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.deu.common }}</span>
+        <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.fin.common }}</span>
+        <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.fra.common }}</span>
+        <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.ita.common }}</span>
+        <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.pol.common }}</span>
+        <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.rus.common }}</span>
+        <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.swe.common }}</span>
+        <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.zho.common }}</span>
+        <span *ngFor="let pais of paises "class="badge bg-primary me-1">{{ pais.translations.urd.common }}</span>  
+    </div>
+  </div>
+
+</ng-template>
